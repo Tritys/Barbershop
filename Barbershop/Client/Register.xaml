@@ -1,0 +1,26 @@
+﻿<Page x:Class="Barbershop.Client.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Barbershop.Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Register">
+
+    <Grid HorizontalAlignment="Center" Width="800" Height="450" VerticalAlignment="Top">
+        
+        <Button x:Name="Button1" Content="Регистрация" HorizontalAlignment="Left" Margin="331,378,0,0" VerticalAlignment="Top" Height="47" Width="205" Click="Button1_Click" Background="#FF848484" FontFamily="Sitka Text" FontSize="20"/>
+        <TextBox Text="{Binding FIO}" x:Name="TextBox1" HorizontalAlignment="Left" Margin="330,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="35" TextChanged="TextBox1_TextChanged" FontFamily="Sitka Text"/>
+        <TextBox Text="{Binding Login}" x:Name="TextBox2" HorizontalAlignment="Left" Margin="330,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="34" TextChanged="TextBox_TextChanged" FontFamily="Sitka Text"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="329,106,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="20" RenderTransformOrigin="0.504,0.249"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="330,181,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Text"/>
+        <Label Content="Регистрация" HorizontalAlignment="Left" Margin="316,36,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Sitka Text"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="325,240,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Text"/>
+        <Label Content="Подтвердить пароль" HorizontalAlignment="Left" Margin="325,306,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="20"/>
+        <Image Margin="10,31,500,202" Source="/image/pngwing.com.png" Stretch="Fill"/>
+        <PasswordBox PasswordChanged="PasswordBox1_PasswordChanged" x:Name="PasswordBox1" HorizontalAlignment="Left" Margin="326,275,0,0" VerticalAlignment="Top" Width="230" Height="32"/>
+        <PasswordBox x:Name="PasswordBox2" HorizontalAlignment="Left" Margin="325,341,0,0" VerticalAlignment="Top" Width="230" Height="32" PasswordChanged="PasswordBox2_PasswordChanged"/>
+
+    </Grid>
+</Page>
